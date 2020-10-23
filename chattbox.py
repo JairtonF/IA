@@ -4,7 +4,7 @@ from chatterbot import ChatBot
 
 bot = ChatBot('Test') #create the chatbot
 
-conversa = ['Oi','Olá','Tudo bem ?', 'Eu estou bem']
+conversa = open('chats.txt','r').readline()
 
 bot.set_trainer(ListTrainer)
 
