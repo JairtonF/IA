@@ -1,0 +1,50 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+    	<pattern>Oi</pattern>
+    	<template>¿Hola todo bien?</template>
+  </category>
+
+    <category>
+    	<pattern>* bem *</pattern>
+    	<template>que bueno, yo también estoy bien</template>
+  </category>
+  
+   <category>
+    	<pattern>* seu nome </pattern>
+    	<template>Mi nombre es esteban, ¿cuál es el tuyo?</template>
+  </category>
+  
+  <category>
+    	<pattern> * nome *</pattern>
+    	<template>Encantado</template>
+  </category>
+
+  <category>
+    	<pattern> quantos anos voce tem *</pattern>
+    	<template>Tengo menos de un mes de edad</template>
+  </category>
+  
+  <category>
+    	<pattern> o que voce e ?</pattern>
+    	<template>soy una inteligencia artificial</template>
+  </category>
+  
+  <category>
+    <pattern> * tchau </pattern>
+    <template>adiós, espero volver a hablar contigo</template>
+  </category>
+  
+  <category>
+    <pattern> * trabalha </pattern>
+    <template>No, soy muy joven y no tengo brazos ni piernas</template>
+  </category>
+  
+  <category>
+    <pattern> * </pattern>
+    <template>No compreendo</template>
+  </category>
+
+
+</aiml>

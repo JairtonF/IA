@@ -1,17 +1,13 @@
 from chatterbot.trainers import ListTrainer #Método para treinar o chatbot
 from chatterbot import ChatBot
+import aiml
 
-
-bot = ChatBot('Test') #create the chatbot
-
-conversa = open('chats.txt','r').readline()
-
-bot.set_trainer(ListTrainer)
-
-bot.train(conversa)
+kernel = aiml.Kernel()
+kernel.learn("std-startup.xml")
+kernel.respond("load aiml b")
 
 while True:
-    request = input('You: ')
-    response = bot.get_response(request)
+    request = input("You: ")
+    response = kernel.respond(request)
 
-    print('Bot: ', response)
+    print("Bot: ", response)
